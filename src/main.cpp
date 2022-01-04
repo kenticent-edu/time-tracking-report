@@ -179,8 +179,8 @@ namespace {
         }
 
         return { vm["blacklist"].as<std::string>(),
-                    vm["separator"].as<char>(),
-                vm["input-file"].as<std::vector<std::string> >() };
+                vm["separator"].as<char>(),
+                        vm["input-file"].as<std::vector<std::string> >() };
     }
 
     ColIndices parse_header(std::ifstream &ifs, char sep)
